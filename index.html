@@ -33,6 +33,32 @@
 	}
 	</style> -->
 	<style>
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center logos horizontally */
+    align-items: center; /* Align logos vertically */
+    gap: 20px; /* Space between logos */
+}
+
+.logo img {
+    width: 100px; /* Set a standard size for all logos */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.logo:hover img {
+    transform: scale(1.1); /* Scale logos on hover */
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 75px; /* Smaller logos on smaller screens */
+    }
+}
+
+
 	
 .desc {
 	font-size: small; color: white; 
@@ -102,7 +128,6 @@
 
 
   </head>
-
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QKF5YH5GL"></script>
 <script>
@@ -151,7 +176,7 @@
 		          		<span class="subheading">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm <span> </span></h1>
 						<h1 class="mb-4 mt-3"> <span> Isha Patel</span></h1>
-			            <h2 class="mb-4">A Machine Learning Engineer</h2>
+			            <h6 class="mb-4">An enthusiastic <b>Machine Learning Engineer</b> with a strong foundation in <b>Data Science</b> and <b>Software Development</b></h6>
 			            <p><a href="images/My Resume.pdf" class="btn btn-primary py-3 px-4" target="_blank" rel="noopener noreferrer">My Resume</a> <a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">My Projects</a></p>
 		            </div>
 		          </div>
@@ -170,7 +195,7 @@
 		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm a <span>CS graduate </span> at UC Irvine</h1>
+			            <h1 class="mb-4 mt-3">I'm a <span>CS graduate </span> from UC Irvine</h1>
 			            <p><a href="images/My Resume.pdf" class="btn btn-primary py-3 px-4" target="_blank" rel="noopener noreferrer">My Resume</a> <a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">My Projects</a></p>
 		            </div>
 		          </div>
@@ -198,20 +223,24 @@
 					<h5 class="mb-4" style="color: #ffbd39;" >"Turning data into decisions, one model at a time"</h5>
 				
 
-		            <p >
-						
-						I'm a passionate Machine Learning Engineer with a knack for transforming complex problems into innovative solutions. My expertise spans developing intelligent algorithms, optimizing models for performance, and creating user-friendly AI applications. With a strong background in data science, I excel in harnessing the power of machine learning to drive impactful results.
-						
-						I thrive in dynamic environments where continuous learning and adaptability are key. 
-						</p>
-		            <ul class="about-info mt-4 px-md-0 px-2">
+		            <p>
+						Hello! I'm Isha Patel, a passionate and dedicated computer science professional with a recent Master’s degree from the University of California, Irvine, specializing in Big Data Management, Database and Data Management, 
+						and Algorithms. I also hold a Bachelor’s degree in Computer Science Engineering from the University of Mumbai, where I first cultivated my skills in Software Engineering, Data Structures and Algorithms, AI, and Machine Learning.
+						<br>
+						Throughout my internships, I have cultivated a robust set of soft skills that are crucial in the tech industry. My time at Engage3, where I was involved in a variety of projects, honed my abilities in effective communication, 
+						critical thinking, and creative problem-solving. These experiences taught me the importance of clear and concise communication, especially in high-stakes environments, allowing me to successfully convey complex ideas and collaborate 
+						with diverse teams. I've learned to remain adaptable and flexible, skills that are vital in a fast-paced field like computer science, where technology and best practices are constantly evolving.
+						<br>
+						I am eager to continue exploring opportunities where I can contribute to and grow within forward-thinking teams that value technology, creativity, and impactful solutions. Let's connect and discuss how I can bring value to your next project or initiative!
+					</p>
+		            <!-- <ul class="about-info mt-4 px-md-0 px-2">
 		            	<li class="d-flex"><span>Name:</span> <span>Isha Patel</span></li>
 		            	<li class="d-flex"><span>Date of birth:</span> <span>August 11, 2001</span></li>
 		            	<li class="d-flex"><span>Address:</span> <span>Irvine, CA 92612, USA</span></li>		        
 		            	<li class="d-flex"><span>Email:</span> <span>ishamp@uci.edu | ishampatel01@gmail.com</span></li>
 		            	<li class="d-flex"><span>Phone: </span> <span>+1 (949) 337-2324</span></li>
 						
-		            </ul>
+		            </ul> -->
 		          </div>
 		        </div>
 	          <!-- <div class="counter-wrap ftco-animate d-flex mt-md-3">
@@ -248,9 +277,8 @@
 						</span>
 						<div class="desc">
 							<h3 class="mb-5">Data Science Intern</h3>
-							<p class="position text-left" style="opacity: 60%; ">@ Engage3, CA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Present</p>
-							<p class="" style=" opacity: 70%;">At Engage3, I am leading two pivotal projects aimed at enhancing data-driven decision-making and client support. The first project involves preparing data tables using the large company database on the Snowflake platform, and creating an AI agent using Snowflake Cortex Analyst to generate market data analysis reports in natural human language. In the second project, I am performing data preparation on system manual PDFs with both textual and image data for efficient model training. I am spearheading the development of a Client Support AI agent utilizing Google Cloud Vertex AI and DialogFlow CX API.</p>
-						</div>
+							<p class="position text-left" style="opacity: 60%; ">@ Engage3, CA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sept 2024</p>
+							<p class="" style=" opacity: 70%;"> At Engage3, I have played a crucial role in enhancing our data analytics capabilities and client support systems. My efforts include meticulous data preparation using both textual and image data from system manuals, optimizing them for efficient model training on the Google Cloud Platform. I led the development of a Client Support AI agent, utilizing Google Cloud Platform's Vertex AI and DialogFlow CX API. This agent employs advanced NLP and NLU techniques to accurately interpret and respond to client queries, integrating seamlessly into the company tool to provide real-time, precise client support.</div>
 					</a>
 				</div>
 					<div class="col-md-4 text-center d-flex ftco-animate ">
@@ -263,7 +291,7 @@
 							</span>
 							<div class="desc">
 								<h3 class="mb-5">Machine Learning Intern</h3>
-								<p class="position text-left" style="opacity: 60%; ">@ Arkision.AI, India&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2022</p>
+								<p class="position text-left" style="opacity: 60%; ">@ Arkision.AI, India&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feb 2022</p>
 								<p class="" style=" opacity: 70%;">I applied image preprocessing techniques, such as resizing for standardized input dimensions, noise reduction to upgrade image quality, and segmentation to isolate pertinent objects, on real-time surveillance footage. Additionally, I developed an image captioning model that achieved an impressive 87% accuracy. This model integrates the VGG16 architecture for robust feature extraction, which is then fed into an LSTM network to generate sequential captions effectively, facilitating efficient monitoring of the video footage.</p>
 									
 							</div>
@@ -280,7 +308,7 @@
 							</span>
 							<div class="desc">
 								<h3 class="mb-5">Python Developer Intern</h3>
-								<p class="position text-left" style="opacity: 60%; ">@ Connect Club, India &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2021</p>
+								<p class="position text-left" style="opacity: 60%; ">@ Connect Club, India &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;June 2021</p>
 							
 								<p class="" style="opacity: 70%;">I developed a robust web application using Flask, paired with a MySQL database managed via XAMPP, to create a supportive ecosystem for investors and startups. This platform facilitates meaningful connections by providing comprehensive resources and opportunities. Additionally, I utilized predictive analytics on historical startup data, empowering investors with insights to make informed decisions and optimize investment strategies based on growth trends.</p>
 							</div>
@@ -375,7 +403,63 @@
 			<p style="color: #ffbd39; opacity: 70%;"> My Technical Toolbox</p>
           </div>
         </div>
-				<div class="row">
+
+		<div class="tech-stack">
+			<div class="logo"><img style="width: 80px;" src="images/Python_logo_01.svg" alt="Python"></div>
+			<div class="logo"><img style="width: 60px;" src="images/ISO_C++_Logo.png" alt="C++"></div>
+			<div class="logo"><img style="width: 50px;" src="images/Java_programming_language_logo.svg.png" alt="Java"></div>
+			<div class="logo"><img style="width: 80px;" src="images/R_logo.svg.png" alt="R"></div>
+			<div class="logo"><img style="width: 150px;" src="images/create-a-website-using-html-css-javascript.png" alt="Html"></div>
+			<div class="logo"><img style="width: 80px;" src="images/flask.png" alt="Java"></div>
+			<div class="logo"><img style="width: 80px;" src="images/pytorch-logo.png" alt="Java"></div>
+			<div class="logo"><img style="width: 60px;" src="images/Tensorflow_logo.svg" alt="Java"></div>
+			<div class="logo"><img style="width: 60px;" src="images/2048px-Keras_logo.svg.png" alt="Java"></div>
+			<div class="logo"><img style="width: 50px;" src="images/pandas.png" alt="Java"></div>
+			<div class="logo"><img style="width: 180px;" src="images/scikit-learn-horizontal-1.png" alt="Java"></div>
+			<div class="logo"><img style="width: 80px;" src="images/numpy.svg" alt="Java"></div>
+			<div class="logo"><img style="width: 80px;" src="images/hf-logo.png" alt="Java"></div>
+			<div class="logo"><img style="width: 150px;" src="images/MySQL-Logo.wine.svg" alt="Java"></div>
+			<div class="logo"><img style="width: 70px;" src="images/Postgresql_elephant.svg.png" alt="Java"></div>
+			<div class="logo"><img style="width: 150px;" src="images/MongoDb.jpg" alt="Java"></div>
+			<div class="logo"><img style="width: 100px;" src="images/cassandra.png" alt="Java"></div>
+			<div class="logo"><img style="width: 100px;" src="images/spark-white.png" alt="Java"></div>
+			<div class="logo"><img style="width: 120px;" src="images/neo4j.png" alt="Java"></div>
+			<div class="logo"><img style="width: 120px;" src="images/Snowflake-Symbol.png" alt="Java"></div>
+			<div class="logo"><img style="width: 70px;" src="images/google-cloud-icon-2048x1646-7admxejz.png" alt="Java"></div>
+			<div class="logo"><img style="width: 80px;" src="images/Vertex_AI_Logo.svg.png" alt="Java"></div>
+			<div class="logo"><img style="width: 100px;" src="images/aws.png" alt="Java"></div>
+			<div class="logo"><img style="width: 60px;" src="images/Microsoft_Fabric_2023.svg" alt="Java"></div>
+			<div class="logo"><img style="width: 70px;" src="images/Git_icon.svg.png" alt="Java"></div>
+			<div class="logo"><img style="width: 60px;" src="images/New_Power_BI_Logo.svg.png" alt="Java"></div>
+			<div class="logo"><img style="width: 70px;" src="images/tableau-software.png" alt="Java"></div>
+			
+		</div>
+		
+		
+		<!-- <div class="skills-container">
+			<div class="skill">
+				<img src="images/Python_logo_01.svg" alt="Python" class="skill-logo">
+			</div>
+			<div class="skill">
+				<img style="width: 80px;" src="images/ISO_C++_Logo.png" alt="C/C++" class="skill-logo">
+			</div>
+			<div class="skill">
+				<img style="width: 50px;" src="images/Java_programming_language_logo.svg.png" alt="C/C++" class="skill-logo">
+			</div>
+		</div>
+		<div class="skills-container">
+			<div class="skill">
+				<img style="width: 90px;" src="images/R_logo.svg.png" alt="C/C++" class="skill-logo">
+			</div>
+			<div class="skill">
+				<img style="width: 200px;" src="images/create-a-website-using-html-css-javascript.png" alt="C/C++" class="skill-logo">
+			</div>
+		</div> -->
+
+		
+
+
+				<!-- <div class="row">
 					<div class="col-md-6 animate-box">
 						<div class="progress-wrap ftco-animate">
 							<h3>Python</h3>
@@ -442,7 +526,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</section>
  
@@ -805,3 +889,5 @@
     
   </body>
 </html>
+
+
